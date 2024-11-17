@@ -20,7 +20,7 @@ export async function POST(req: Request) {
           content: `Правильное значение: "${meaning}". Догадка игрока: "${guess}". Оцени схожесть по шкале от 0 до 100.`
         }
       ],
-      model: "gpt-3.5-turbo",
+      model: "gpt-4o",
     })
 
     const score = parseInt(completion.choices[0].message.content || "0")

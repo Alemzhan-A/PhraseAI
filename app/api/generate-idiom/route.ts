@@ -14,7 +14,7 @@ export async function GET() {
           content: "Придумай новый, не существующий фразеологизм на русском языке. Он должен звучать правдоподобно, но быть полностью выдуманным. Он также должен быть смешным или абсудрным. Ответ дай в формате JSON с полями 'idiom' (сам фразеологизм) и 'meaning' (его значение)."
         }
       ],
-      model: "gpt-3.5-turbo",
+      model: "gpt-4o",
     })
 
     const response = JSON.parse(completion.choices[0].message.content || "{}")
